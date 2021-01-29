@@ -1,7 +1,7 @@
 # Sakuragi
 Based on Sakuragi mod from Redtrees by Glory!
 
-Rewrite by lumberJack adds groves of blooming cherry trees to deciduous and [bamboo forests](https:github.com/kakalak-lumberJack/bamboo_forest)
+Rewrite by lumberJack adds groves of blooming cherry trees to deciduous and [bamboo forests](https://github.com/kakalak-lumberJack/bamboo_forest)
 
 Includes:
 
