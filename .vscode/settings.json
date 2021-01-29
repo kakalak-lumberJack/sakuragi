@@ -1,0 +1,10 @@
+{
+    "Lua.diagnostics.globals": [
+        "dofile",
+        "dofile"
+    ],
+    "Lua.diagnostics.disable": [
+        "undefined-global",
+        "unused-function"
+    ]
+}

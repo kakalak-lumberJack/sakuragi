@@ -1,0 +1,5 @@
+default
+doors
+bamboo_forest?
+stairs?
+stairsplus?
