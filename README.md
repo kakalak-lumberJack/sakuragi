@@ -5,9 +5,9 @@ Rewrite by lumberJack adds groves of blooming cherry trees to deciduous and [bam
 
 Includes:
 
-+New, less boxy schematic tree shape, 
-+Bug fixes including adding leaf decay, forced placement over grass, flowers etc.  
-+Added features such as support bamboo forest, stairsplus (moreblocks) and stairs for wood and tree nodes.
+* New, less boxy schematic tree shape 
+* Bug fixes including adding leaf decay, forced placement over grass, flowers etc.  
+* Added features such as support bamboo forest, stairsplus (moreblocks) and stairs for wood and tree nodes.
 
 Includes original features such as fences, gates and japanese doors.
 
