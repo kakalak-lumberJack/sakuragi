@@ -41,3 +41,9 @@ minetest.register_craft({
 	recipe = "sakuragi:leaves",
 	burntime = 15,
 })
+
+minetest.register_craft({
+	type = "fuel",
+	recipe = "sakuragi:leaves_white",
+	burntime = 15,
+})

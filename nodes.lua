@@ -38,7 +38,6 @@ minetest.register_node("sakuragi:leaves", {
 	description = "Cherry Blossom Leaves",
 	drawtype = "allfaces",
 	waving = 1,
-	visual_scale = 1.3,
 	tiles = {"sakuragi_leaves.png"},
 	paramtype = "light",
 	is_ground_content = false,
@@ -59,9 +58,33 @@ minetest.register_node("sakuragi:leaves", {
 	after_place_node = sakuragi.after_place_leaves,
 })
 
+minetest.register_node("sakuragi:leaves_white", {
+	description = "White Cherry Blossom Leaves",
+	drawtype = "allfaces",
+	waving = 1,
+	tiles = {"sakuragi_leaves_white.png"},
+	paramtype = "light",
+	is_ground_content = false,
+	groups = {snappy=3, leafdecay=3, flammable=10, leaves=1},
+	drop = {
+		max_items = 1,
+		items = {
+			{
+				items = {"sakuragi:sapling"},
+				rarity = 20,
+			},
+			{
+				items = {"sakuragi:leaves_white"},
+			}
+		}
+	},
+	sounds = default.node_sound_leaves_defaults(),
+	after_place_node = sakuragi.after_place_leaves,
+})
+
 default.register_leafdecay({
     trunks = {"sakuragi:tree"},
-    leaves = {"sakuragi:leaves"},
+    leaves = {"sakuragi:leaves", "sakuragi:leaves_white"},
     radius = 3,
 })
 		
@@ -90,29 +113,3 @@ doors.register_fencegate("sakuragi:fencegate", {
 	material = "sakuragi:swood",
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2}
 })
-
---[[minetest.register_node("sakuragi:cherry", {
-	description = "Cherry",
-	drawtype = "plantlike",
-	visual_scale = 1.0,
-	tiles = {"sakuragi_cherry.png"},
-	inventory_image = "sakuragi_cherry.png",
-	paramtype = "light",
-	sunlight_propagates = true,
-	walkable = false,
-	is_ground_content = false,
-	selection_box = {
-		type = "fixed",
-		fixed = {-0.2, -0.5, -0.2, 0.2, 0, 0.2}
-	},
-	groups = {fleshy = 3, dig_immediate = 3, flammable = 2,
-		leafdecay = 3, leafdecay_drop = 1},
-	on_use = minetest.item_eat(2),
-	sounds = default.node_sound_leaves_defaults(),
-
-	after_place_node = function(pos, placer, itemstack)
-		if placer:is_player() then
-			minetest.set_node(pos, {name = "sakuragi:cherry", param2 = 1})
-		end
-	end,
-})]]

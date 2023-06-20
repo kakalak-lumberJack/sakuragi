@@ -1,18 +1,21 @@
 # Sakuragi
-Based on Sakuragi mod from Redtrees by Glory!
+Adapted Sakuragi mod from Redtrees by Glory!
+Rewritten by lumberJack adds groves of blooming cherry trees to deciduous forest
+New cherry blossom (pink and white) textures by Tenplus1 from ethereal mod CC0
 
-Rewrite by lumberJack adds groves of blooming cherry trees to deciduous and [bamboo forests](https://github.com/kakalak-lumberJack/bamboo_forest)
 
 Includes:
 
-* New, less boxy schematic tree shape 
-* Bug fixes including adding leaf decay, forced placement over grass, flowers etc.  
-* Added features such as support bamboo forest, stairsplus (moreblocks) and stairs for wood and tree nodes.
+* Less boxy schematic with smaller scale similar to default trees 
+* Fixes including adding leaf decay, forced placement over grass, flowers etc.  
+* Added stairsplus (moreblocks) and stairs for wood and tree nodes.
+* Two varieties of cherry tree with textures from Ethereal
 
-Includes original features such as fences, gates and japanese doors.
+Original features such as fences, gates and japanese doors.
 
-Relicensed to MIT licences.
+Relicensed to code MIT licences.
 
+Original License info: 
 ------------------------------------------
 Cherry Trees? Blossoms? for Minetest.
 Add a Nipponese feel to your worlds.
