@@ -5,7 +5,7 @@ minetest.register_decoration({
     place_on = {"default:dirt_with_grass"},
     sidelen = 16,
     noise_params = {
-        offset = -0.03,
+        offset = -0.033,
         scale = -0.045,
         spread = {x=200, y=200, z=200},
         seed = 427,
