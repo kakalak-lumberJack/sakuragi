@@ -93,10 +93,8 @@ minetest.register_abm({
             schematic = sakuragi.cherry_tree_white_schematic
         end
 		minetest.log("action", "A cherry blossom sapling grows into a cherry tree at "..minetest.pos_to_string(pos))
-        --minetest.remove_node(pos)
         pos.y = pos.y - 1
-        --minetest.remove_node(pos)
-		minetest.place_schematic(pos, sakuragi.cherry_tree_schematic, "random", {}, false, {place_center_x = true, place_center_z = true, force_placement = true})
+		minetest.place_schematic(pos, schematic, "random", {}, true, {place_center_x = true, place_center_z = true})
     end
 })
 
